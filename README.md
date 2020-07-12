@@ -13,6 +13,11 @@ Paper arXiv URL: https://arxiv.org/abs/2001.07922
 
 (2) Graph Neural Lasso for Dynamic Network Regression https://arxiv.org/abs/1907.11114
 
+### Graph Neural Networks from IFM Lab
+
+The latest graph neural network models proposed by IFM Lab can be found via the following link<br>
+IFM Lab GNNs: https://github.com/jwzhanggy/IFMLab_GNN
+
 ### References
 
 ```
