@@ -1,6 +1,6 @@
 # DifNet
 
-![Deep Diffusive Neural Network Model Architecture](./result/architecture.png)
+![Deep Diffusive Neural Network Model Architecture](./result/framework.png)
 
 ## Deep Diffusive Neural Network on Graph Semi-Supervised Classification
 
