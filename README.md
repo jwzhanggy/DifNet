@@ -35,7 +35,7 @@ After downloading the code, you can run
 ```
 python3 script.py
 ```
-directly for node classification. 
+directly for node classification on Cora dataset.
 
 ### How to turn on/off the blocks?
 
@@ -64,4 +64,37 @@ A simpler template of the code is also available at http://www.ifmlab.org/files/
 
 (5) setting.py (for experiment settings, defines abstract method load_run_save_evaluate() )
 
-The other inherited class will implement these abstract methonds.
+The base class of these five parts are defined in ./code/base_class/, they are all abstract class defining the templates and architecture of the code.
+
+The inherited class are provided in ./code, which inherit from the base classes, implement the abstract methonds.
+
+
+## Detailed information on funtional classes?
+
+### a. data
+
+(1) DatasetLoader.py (for dataset loading)
+
+
+### b. method
+
+(1) cellGDU.py (defines the GDU neuron, we also include several simplified version of GDU in this class)
+
+(2) MethodDifNet.py (the DifNet model for node classification)
+
+
+### c. result
+
+(1) ResultSaving.py (for saving results to file)
+
+
+### d. evaluate
+
+(1) EvaluateAcc.py (accuracy metric)
+
+
+### e. setting
+
+(1) Settings.py (defines the interactions and data exchange among the above classes)
+
+
