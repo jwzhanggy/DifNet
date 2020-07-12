@@ -98,3 +98,21 @@ The inherited class are provided in ./code, which inherit from the base classes,
 (1) Settings.py (defines the interactions and data exchange among the above classes)
 
 
+************************************************************************************************
+
+## GDU Neuron
+
+![GDU Neuron Architecture](./result/gdu.png)
+
+In ./code/cellGDU.py , we provide the implementation of several different versions of GDU.
+
+(1) gdu_type == 'original': the GDU introduced in the paper. It introduces two neural gates f and e for state updating, and two other neural gates g and r for output selection.
+
+(2) gdu_type == 'short_gate': a simplified version of GDU. It also uses the same number of gates for state updating and output selection. The main simplification is on the output, which selects output about h and z, whereas x is a fixed output.
+
+(3) gdu_type == 'single_gate': a simplified version of GDU. It uses two neural gates f and e for state updating, but only uses one single gate for output selection. It is also introduced in the paper as a simplified version of GDU.
+
+(4) gdu_type == 'recombine': a simplified version of GDU. It further simplify the "short_gate" GDU in the output to be selected.
+
+
+
